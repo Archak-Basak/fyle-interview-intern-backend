@@ -69,4 +69,3 @@ def test_assingment_resubmitt_error(client, h_student_1):
         })
     error_response = response.json
     assert response.status_code == 200
-    
