@@ -1,4 +1,4 @@
-## Application 
+# Application 
 
 There are 4 resources:
 - Users
