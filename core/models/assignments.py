@@ -77,7 +77,10 @@ class Assignment(db.Model):
     def gradeAssignment(cls, _id, grade, principal: Principal):
         assignment = Assignment.get_by_id(_id)
         assertions.assert_found(assignment, 'No assignment with this id was found')
+<<<<<<< HEAD
         assertions.assert_valid(assignment.state is AssignmentStateEnum.SUBMITTED, 'only a submitted assignment can be graded')
+=======
+>>>>>>> 655623ef6978f0adf30a97a948eb0cb2a5d497cf
         assertions.assert_valid(assignment.teacher_id == principal.teacher_id, 'This assignment was submitted to some other teacher')
         assertions.assert_valid(assignment.content is not None, 'assignment with empty content cannot be graded')
 
